@@ -29,13 +29,19 @@ window.addEventListener('load', () => {
         
         task_el.appendChild(task_content_el);
 
+        const task_ol_el = document.createElement('ol');
+        const task_ol_li_el = document.createElement('li');
+
+        task_content_el.appendChild(task_ol_el);
+        task_ol_el.appendChild(task_ol_li_el);
+
         const task_input_el = document.createElement('input');
         task_input_el.classList.add('text');
         task_input_el.type = 'text';
         task_input_el.value = task;
         task_input_el.setAttribute('readonly', 'readonly');
 
-        task_content_el.appendChild(task_input_el);
+        task_ol_li_el.appendChild(task_input_el);
 
         //task action button
         const task_actions_el = document.createElement('div');
