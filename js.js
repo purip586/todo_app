@@ -12,8 +12,9 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        window.localStorage.setItem('todos', JSON.stringify(task));
         const task = input.value;
+
+        window.localStorage.setItem('todos', JSON.stringify(task));
         
         if(!task){
             alert('please add a task');
