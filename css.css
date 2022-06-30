@@ -10,6 +10,7 @@ body {
     min-height: 100vh;
     background: #5d00b9;
     color: rgb(230, 230, 230);
+    padding: 1rem;
 }
 
 header {
@@ -44,17 +45,17 @@ button {
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem;
-    color: rgb(240, 240, 240);
-    font-size: 1.25rem;
+    color: rgb(220, 220, 220);
+    font-size: 1rem;
 }
 
 #new-task-input::placeholder {
-    color: rgb(190, 190, 190);
+    color: rgb(210, 210, 210);
 }
 
 #new-task-submit {
-    color: rgb(230, 230, 230);
-    font-size: 1.25rem;
+    color: rgb(220, 220, 220);
+    font-size: 1rem;
     font-weight: 700;
     background: rgba(59, 12, 139, 0.5);
     padding: 1rem;
@@ -74,7 +75,7 @@ button {
 main {
     flex: 1 1 0%;
     background-color: rgba(59, 12, 139, 0.5);
-    border-radius: 1rem;
+    border-radius: 1.25rem;
     color: rgb(240, 240, 240);
     font-size: 1.25rem;
     max-width: 700px;
@@ -87,7 +88,7 @@ main {
 }
 
 .task-list h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
     color: rgb(230, 230, 230);
     margin-bottom: 1rem;

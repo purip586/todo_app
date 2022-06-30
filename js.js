@@ -1,11 +1,10 @@
 
-window.localStorage.setItem('todos', JSON.stringify(task));
 
 
 window.addEventListener('load', () => {
 
     task = JSON.parse(localStorage.getItem('todos')) || [];
-
+    
     const form = document.querySelector('#new-task-form');
     const input = document.querySelector('#new-task-input');
     const list_el = document.querySelector('#tasks');
@@ -13,6 +12,7 @@ window.addEventListener('load', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
+        window.localStorage.setItem('todos', JSON.stringify(task));
         const task = input.value;
         
         if(!task){
